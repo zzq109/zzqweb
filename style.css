@@ -1,0 +1,137 @@
+/* 科技感样式 - style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+    border: 1px solid #334155;
+}
+
+section h2 {
+    color: #38bdf8;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::before {
+    content: "▸";
+    color: #38bdf8;
+    margin-right: 0.5rem;
+}
+
+section p {
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #38bdf8;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 1.5rem auto;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+    border: 1px solid #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* 动画效果 */
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+}
